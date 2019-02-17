@@ -15,6 +15,14 @@ public class PmsSkuStock implements Serializable {
      */
     private String skuCode;
 
+    /**
+     * 商品进价
+     */
+    private BigDecimal priceIn;
+    
+    /**
+     * 商品销售价格
+     */
     private BigDecimal price;
 
     /**
@@ -96,7 +104,15 @@ public class PmsSkuStock implements Serializable {
         this.skuCode = skuCode;
     }
 
-    public BigDecimal getPrice() {
+    public BigDecimal getPriceIn() {
+		return priceIn;
+	}
+
+	public void setPriceIn(BigDecimal priceIn) {
+		this.priceIn = priceIn;
+	}
+
+	public BigDecimal getPrice() {
         return price;
     }
 
