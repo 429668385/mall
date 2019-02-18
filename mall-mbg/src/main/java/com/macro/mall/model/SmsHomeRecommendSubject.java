@@ -36,7 +36,7 @@ public class SmsHomeRecommendSubject implements Serializable {
     }
 
     public void setSubjectName(String subjectName) {
-        this.subjectName = subjectName;
+        this.subjectName = subjectName == null ? null : subjectName.trim();
     }
 
     public Integer getRecommendStatus() {

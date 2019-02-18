@@ -75,7 +75,7 @@ public class PmsBrand implements Serializable {
     }
 
     public void setName(String name) {
-        this.name = name;
+        this.name = name == null ? null : name.trim();
     }
 
     public String getFirstLetter() {
@@ -83,7 +83,7 @@ public class PmsBrand implements Serializable {
     }
 
     public void setFirstLetter(String firstLetter) {
-        this.firstLetter = firstLetter;
+        this.firstLetter = firstLetter == null ? null : firstLetter.trim();
     }
 
     public Integer getSort() {
@@ -131,7 +131,7 @@ public class PmsBrand implements Serializable {
     }
 
     public void setLogo(String logo) {
-        this.logo = logo;
+        this.logo = logo == null ? null : logo.trim();
     }
 
     public String getBigPic() {
@@ -139,7 +139,7 @@ public class PmsBrand implements Serializable {
     }
 
     public void setBigPic(String bigPic) {
-        this.bigPic = bigPic;
+        this.bigPic = bigPic == null ? null : bigPic.trim();
     }
 
     public String getBrandStory() {
@@ -147,7 +147,7 @@ public class PmsBrand implements Serializable {
     }
 
     public void setBrandStory(String brandStory) {
-        this.brandStory = brandStory;
+        this.brandStory = brandStory == null ? null : brandStory.trim();
     }
 
     @Override

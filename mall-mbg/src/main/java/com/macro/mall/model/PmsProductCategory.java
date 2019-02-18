@@ -80,7 +80,7 @@ public class PmsProductCategory implements Serializable {
     }
 
     public void setName(String name) {
-        this.name = name;
+        this.name = name == null ? null : name.trim();
     }
 
     public Integer getLevel() {
@@ -104,7 +104,7 @@ public class PmsProductCategory implements Serializable {
     }
 
     public void setProductUnit(String productUnit) {
-        this.productUnit = productUnit;
+        this.productUnit = productUnit == null ? null : productUnit.trim();
     }
 
     public Integer getNavStatus() {
@@ -136,7 +136,7 @@ public class PmsProductCategory implements Serializable {
     }
 
     public void setIcon(String icon) {
-        this.icon = icon;
+        this.icon = icon == null ? null : icon.trim();
     }
 
     public String getKeywords() {
@@ -144,7 +144,7 @@ public class PmsProductCategory implements Serializable {
     }
 
     public void setKeywords(String keywords) {
-        this.keywords = keywords;
+        this.keywords = keywords == null ? null : keywords.trim();
     }
 
     public String getDescription() {
@@ -152,7 +152,7 @@ public class PmsProductCategory implements Serializable {
     }
 
     public void setDescription(String description) {
-        this.description = description;
+        this.description = description == null ? null : description.trim();
     }
 
     @Override

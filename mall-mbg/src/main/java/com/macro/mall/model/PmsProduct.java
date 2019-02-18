@@ -75,6 +75,13 @@ public class PmsProduct implements Serializable {
      */
     private Integer sale;
 
+    /**
+     * 商品进价
+     *
+     * @mbggenerated
+     */
+    private Long priceIn;
+
     private BigDecimal price;
 
     /**
@@ -286,7 +293,7 @@ public class PmsProduct implements Serializable {
     }
 
     public void setName(String name) {
-        this.name = name;
+        this.name = name == null ? null : name.trim();
     }
 
     public String getPic() {
@@ -294,7 +301,7 @@ public class PmsProduct implements Serializable {
     }
 
     public void setPic(String pic) {
-        this.pic = pic;
+        this.pic = pic == null ? null : pic.trim();
     }
 
     public String getProductSn() {
@@ -302,7 +309,7 @@ public class PmsProduct implements Serializable {
     }
 
     public void setProductSn(String productSn) {
-        this.productSn = productSn;
+        this.productSn = productSn == null ? null : productSn.trim();
     }
 
     public Integer getDeleteStatus() {
@@ -361,6 +368,14 @@ public class PmsProduct implements Serializable {
         this.sale = sale;
     }
 
+    public Long getPriceIn() {
+        return priceIn;
+    }
+
+    public void setPriceIn(Long priceIn) {
+        this.priceIn = priceIn;
+    }
+
     public BigDecimal getPrice() {
         return price;
     }
@@ -406,7 +421,7 @@ public class PmsProduct implements Serializable {
     }
 
     public void setSubTitle(String subTitle) {
-        this.subTitle = subTitle;
+        this.subTitle = subTitle == null ? null : subTitle.trim();
     }
 
     public BigDecimal getOriginalPrice() {
@@ -438,7 +453,7 @@ public class PmsProduct implements Serializable {
     }
 
     public void setUnit(String unit) {
-        this.unit = unit;
+        this.unit = unit == null ? null : unit.trim();
     }
 
     public BigDecimal getWeight() {
@@ -462,7 +477,7 @@ public class PmsProduct implements Serializable {
     }
 
     public void setServiceIds(String serviceIds) {
-        this.serviceIds = serviceIds;
+        this.serviceIds = serviceIds == null ? null : serviceIds.trim();
     }
 
     public String getKeywords() {
@@ -470,7 +485,7 @@ public class PmsProduct implements Serializable {
     }
 
     public void setKeywords(String keywords) {
-        this.keywords = keywords;
+        this.keywords = keywords == null ? null : keywords.trim();
     }
 
     public String getNote() {
@@ -478,7 +493,7 @@ public class PmsProduct implements Serializable {
     }
 
     public void setNote(String note) {
-        this.note = note;
+        this.note = note == null ? null : note.trim();
     }
 
     public String getAlbumPics() {
@@ -486,7 +501,7 @@ public class PmsProduct implements Serializable {
     }
 
     public void setAlbumPics(String albumPics) {
-        this.albumPics = albumPics;
+        this.albumPics = albumPics == null ? null : albumPics.trim();
     }
 
     public String getDetailTitle() {
@@ -494,7 +509,7 @@ public class PmsProduct implements Serializable {
     }
 
     public void setDetailTitle(String detailTitle) {
-        this.detailTitle = detailTitle;
+        this.detailTitle = detailTitle == null ? null : detailTitle.trim();
     }
 
     public Date getPromotionStartTime() {
@@ -534,7 +549,7 @@ public class PmsProduct implements Serializable {
     }
 
     public void setBrandName(String brandName) {
-        this.brandName = brandName;
+        this.brandName = brandName == null ? null : brandName.trim();
     }
 
     public String getProductCategoryName() {
@@ -542,7 +557,7 @@ public class PmsProduct implements Serializable {
     }
 
     public void setProductCategoryName(String productCategoryName) {
-        this.productCategoryName = productCategoryName;
+        this.productCategoryName = productCategoryName == null ? null : productCategoryName.trim();
     }
 
     public String getDescription() {
@@ -550,7 +565,7 @@ public class PmsProduct implements Serializable {
     }
 
     public void setDescription(String description) {
-        this.description = description;
+        this.description = description == null ? null : description.trim();
     }
 
     public String getDetailDesc() {
@@ -558,7 +573,7 @@ public class PmsProduct implements Serializable {
     }
 
     public void setDetailDesc(String detailDesc) {
-        this.detailDesc = detailDesc;
+        this.detailDesc = detailDesc == null ? null : detailDesc.trim();
     }
 
     public String getDetailHtml() {
@@ -566,7 +581,7 @@ public class PmsProduct implements Serializable {
     }
 
     public void setDetailHtml(String detailHtml) {
-        this.detailHtml = detailHtml;
+        this.detailHtml = detailHtml == null ? null : detailHtml.trim();
     }
 
     public String getDetailMobileHtml() {
@@ -574,7 +589,7 @@ public class PmsProduct implements Serializable {
     }
 
     public void setDetailMobileHtml(String detailMobileHtml) {
-        this.detailMobileHtml = detailMobileHtml;
+        this.detailMobileHtml = detailMobileHtml == null ? null : detailMobileHtml.trim();
     }
 
     @Override
@@ -598,6 +613,7 @@ public class PmsProduct implements Serializable {
         sb.append(", verifyStatus=").append(verifyStatus);
         sb.append(", sort=").append(sort);
         sb.append(", sale=").append(sale);
+        sb.append(", priceIn=").append(priceIn);
         sb.append(", price=").append(price);
         sb.append(", promotionPrice=").append(promotionPrice);
         sb.append(", giftGrowth=").append(giftGrowth);

@@ -82,7 +82,7 @@ public class PmsComment implements Serializable {
     }
 
     public void setMemberNickName(String memberNickName) {
-        this.memberNickName = memberNickName;
+        this.memberNickName = memberNickName == null ? null : memberNickName.trim();
     }
 
     public String getProductName() {
@@ -90,7 +90,7 @@ public class PmsComment implements Serializable {
     }
 
     public void setProductName(String productName) {
-        this.productName = productName;
+        this.productName = productName == null ? null : productName.trim();
     }
 
     public Integer getStar() {
@@ -106,7 +106,7 @@ public class PmsComment implements Serializable {
     }
 
     public void setMemberIp(String memberIp) {
-        this.memberIp = memberIp;
+        this.memberIp = memberIp == null ? null : memberIp.trim();
     }
 
     public Date getCreateTime() {
@@ -130,7 +130,7 @@ public class PmsComment implements Serializable {
     }
 
     public void setProductAttribute(String productAttribute) {
-        this.productAttribute = productAttribute;
+        this.productAttribute = productAttribute == null ? null : productAttribute.trim();
     }
 
     public Integer getCollectCouont() {
@@ -154,7 +154,7 @@ public class PmsComment implements Serializable {
     }
 
     public void setPics(String pics) {
-        this.pics = pics;
+        this.pics = pics == null ? null : pics.trim();
     }
 
     public String getMemberIcon() {
@@ -162,7 +162,7 @@ public class PmsComment implements Serializable {
     }
 
     public void setMemberIcon(String memberIcon) {
-        this.memberIcon = memberIcon;
+        this.memberIcon = memberIcon == null ? null : memberIcon.trim();
     }
 
     public Integer getReplayCount() {
@@ -178,7 +178,7 @@ public class PmsComment implements Serializable {
     }
 
     public void setContent(String content) {
-        this.content = content;
+        this.content = content == null ? null : content.trim();
     }
 
     @Override

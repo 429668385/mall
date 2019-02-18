@@ -30,7 +30,7 @@ public class PmsAlbum implements Serializable {
     }
 
     public void setName(String name) {
-        this.name = name;
+        this.name = name == null ? null : name.trim();
     }
 
     public String getCoverPic() {
@@ -38,7 +38,7 @@ public class PmsAlbum implements Serializable {
     }
 
     public void setCoverPic(String coverPic) {
-        this.coverPic = coverPic;
+        this.coverPic = coverPic == null ? null : coverPic.trim();
     }
 
     public Integer getPicCount() {
@@ -62,7 +62,7 @@ public class PmsAlbum implements Serializable {
     }
 
     public void setDescription(String description) {
-        this.description = description;
+        this.description = description == null ? null : description.trim();
     }
 
     @Override

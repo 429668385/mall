@@ -78,7 +78,7 @@ public class SmsHomeAdvertise implements Serializable {
     }
 
     public void setName(String name) {
-        this.name = name;
+        this.name = name == null ? null : name.trim();
     }
 
     public Integer getType() {
@@ -94,7 +94,7 @@ public class SmsHomeAdvertise implements Serializable {
     }
 
     public void setPic(String pic) {
-        this.pic = pic;
+        this.pic = pic == null ? null : pic.trim();
     }
 
     public Date getStartTime() {
@@ -142,7 +142,7 @@ public class SmsHomeAdvertise implements Serializable {
     }
 
     public void setUrl(String url) {
-        this.url = url;
+        this.url = url == null ? null : url.trim();
     }
 
     public String getNote() {
@@ -150,7 +150,7 @@ public class SmsHomeAdvertise implements Serializable {
     }
 
     public void setNote(String note) {
-        this.note = note;
+        this.note = note == null ? null : note.trim();
     }
 
     public Integer getSort() {

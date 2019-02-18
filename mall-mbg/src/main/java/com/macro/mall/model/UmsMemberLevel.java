@@ -90,7 +90,7 @@ public class UmsMemberLevel implements Serializable {
     }
 
     public void setName(String name) {
-        this.name = name;
+        this.name = name == null ? null : name.trim();
     }
 
     public Integer getGrowthPoint() {
@@ -178,7 +178,7 @@ public class UmsMemberLevel implements Serializable {
     }
 
     public void setNote(String note) {
-        this.note = note;
+        this.note = note == null ? null : note.trim();
     }
 
     @Override

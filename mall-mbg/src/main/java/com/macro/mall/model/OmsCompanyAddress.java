@@ -83,7 +83,7 @@ public class OmsCompanyAddress implements Serializable {
     }
 
     public void setAddressName(String addressName) {
-        this.addressName = addressName;
+        this.addressName = addressName == null ? null : addressName.trim();
     }
 
     public Integer getSendStatus() {
@@ -107,7 +107,7 @@ public class OmsCompanyAddress implements Serializable {
     }
 
     public void setName(String name) {
-        this.name = name;
+        this.name = name == null ? null : name.trim();
     }
 
     public String getPhone() {
@@ -115,7 +115,7 @@ public class OmsCompanyAddress implements Serializable {
     }
 
     public void setPhone(String phone) {
-        this.phone = phone;
+        this.phone = phone == null ? null : phone.trim();
     }
 
     public String getProvince() {
@@ -123,7 +123,7 @@ public class OmsCompanyAddress implements Serializable {
     }
 
     public void setProvince(String province) {
-        this.province = province;
+        this.province = province == null ? null : province.trim();
     }
 
     public String getCity() {
@@ -131,7 +131,7 @@ public class OmsCompanyAddress implements Serializable {
     }
 
     public void setCity(String city) {
-        this.city = city;
+        this.city = city == null ? null : city.trim();
     }
 
     public String getRegion() {
@@ -139,7 +139,7 @@ public class OmsCompanyAddress implements Serializable {
     }
 
     public void setRegion(String region) {
-        this.region = region;
+        this.region = region == null ? null : region.trim();
     }
 
     public String getDetailAddress() {
@@ -147,7 +147,7 @@ public class OmsCompanyAddress implements Serializable {
     }
 
     public void setDetailAddress(String detailAddress) {
-        this.detailAddress = detailAddress;
+        this.detailAddress = detailAddress == null ? null : detailAddress.trim();
     }
 
     @Override

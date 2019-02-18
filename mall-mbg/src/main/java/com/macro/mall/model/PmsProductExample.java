@@ -1036,6 +1036,66 @@ public class PmsProductExample {
             return (Criteria) this;
         }
 
+        public Criteria andPriceInIsNull() {
+            addCriterion("price_in is null");
+            return (Criteria) this;
+        }
+
+        public Criteria andPriceInIsNotNull() {
+            addCriterion("price_in is not null");
+            return (Criteria) this;
+        }
+
+        public Criteria andPriceInEqualTo(Long value) {
+            addCriterion("price_in =", value, "priceIn");
+            return (Criteria) this;
+        }
+
+        public Criteria andPriceInNotEqualTo(Long value) {
+            addCriterion("price_in <>", value, "priceIn");
+            return (Criteria) this;
+        }
+
+        public Criteria andPriceInGreaterThan(Long value) {
+            addCriterion("price_in >", value, "priceIn");
+            return (Criteria) this;
+        }
+
+        public Criteria andPriceInGreaterThanOrEqualTo(Long value) {
+            addCriterion("price_in >=", value, "priceIn");
+            return (Criteria) this;
+        }
+
+        public Criteria andPriceInLessThan(Long value) {
+            addCriterion("price_in <", value, "priceIn");
+            return (Criteria) this;
+        }
+
+        public Criteria andPriceInLessThanOrEqualTo(Long value) {
+            addCriterion("price_in <=", value, "priceIn");
+            return (Criteria) this;
+        }
+
+        public Criteria andPriceInIn(List<Long> values) {
+            addCriterion("price_in in", values, "priceIn");
+            return (Criteria) this;
+        }
+
+        public Criteria andPriceInNotIn(List<Long> values) {
+            addCriterion("price_in not in", values, "priceIn");
+            return (Criteria) this;
+        }
+
+        public Criteria andPriceInBetween(Long value1, Long value2) {
+            addCriterion("price_in between", value1, value2, "priceIn");
+            return (Criteria) this;
+        }
+
+        public Criteria andPriceInNotBetween(Long value1, Long value2) {
+            addCriterion("price_in not between", value1, value2, "priceIn");
+            return (Criteria) this;
+        }
+
         public Criteria andPriceIsNull() {
             addCriterion("price is null");
             return (Criteria) this;

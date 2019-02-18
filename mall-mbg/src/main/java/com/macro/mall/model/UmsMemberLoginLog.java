@@ -54,7 +54,7 @@ public class UmsMemberLoginLog implements Serializable {
     }
 
     public void setIp(String ip) {
-        this.ip = ip;
+        this.ip = ip == null ? null : ip.trim();
     }
 
     public String getCity() {
@@ -62,7 +62,7 @@ public class UmsMemberLoginLog implements Serializable {
     }
 
     public void setCity(String city) {
-        this.city = city;
+        this.city = city == null ? null : city.trim();
     }
 
     public Integer getLoginType() {
@@ -78,7 +78,7 @@ public class UmsMemberLoginLog implements Serializable {
     }
 
     public void setProvince(String province) {
-        this.province = province;
+        this.province = province == null ? null : province.trim();
     }
 
     @Override

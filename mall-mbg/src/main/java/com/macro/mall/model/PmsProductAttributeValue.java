@@ -47,7 +47,7 @@ public class PmsProductAttributeValue implements Serializable {
     }
 
     public void setValue(String value) {
-        this.value = value;
+        this.value = value == null ? null : value.trim();
     }
 
     @Override

@@ -32,7 +32,7 @@ public class PmsAlbumPic implements Serializable {
     }
 
     public void setPic(String pic) {
-        this.pic = pic;
+        this.pic = pic == null ? null : pic.trim();
     }
 
     @Override

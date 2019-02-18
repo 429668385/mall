@@ -134,7 +134,7 @@ public class SmsCoupon implements Serializable {
     }
 
     public void setName(String name) {
-        this.name = name;
+        this.name = name == null ? null : name.trim();
     }
 
     public Integer getPlatform() {
@@ -206,7 +206,7 @@ public class SmsCoupon implements Serializable {
     }
 
     public void setNote(String note) {
-        this.note = note;
+        this.note = note == null ? null : note.trim();
     }
 
     public Integer getPublishCount() {
@@ -246,7 +246,7 @@ public class SmsCoupon implements Serializable {
     }
 
     public void setCode(String code) {
-        this.code = code;
+        this.code = code == null ? null : code.trim();
     }
 
     public Integer getMemberLevel() {

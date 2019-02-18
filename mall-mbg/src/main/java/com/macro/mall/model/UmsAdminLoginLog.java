@@ -52,7 +52,7 @@ public class UmsAdminLoginLog implements Serializable {
     }
 
     public void setIp(String ip) {
-        this.ip = ip;
+        this.ip = ip == null ? null : ip.trim();
     }
 
     public String getAddress() {
@@ -60,7 +60,7 @@ public class UmsAdminLoginLog implements Serializable {
     }
 
     public void setAddress(String address) {
-        this.address = address;
+        this.address = address == null ? null : address.trim();
     }
 
     public String getUserAgent() {
@@ -68,7 +68,7 @@ public class UmsAdminLoginLog implements Serializable {
     }
 
     public void setUserAgent(String userAgent) {
-        this.userAgent = userAgent;
+        this.userAgent = userAgent == null ? null : userAgent.trim();
     }
 
     @Override

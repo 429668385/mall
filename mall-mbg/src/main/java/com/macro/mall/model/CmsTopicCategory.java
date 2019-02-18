@@ -40,7 +40,7 @@ public class CmsTopicCategory implements Serializable {
     }
 
     public void setName(String name) {
-        this.name = name;
+        this.name = name == null ? null : name.trim();
     }
 
     public String getIcon() {
@@ -48,7 +48,7 @@ public class CmsTopicCategory implements Serializable {
     }
 
     public void setIcon(String icon) {
-        this.icon = icon;
+        this.icon = icon == null ? null : icon.trim();
     }
 
     public Integer getSubjectCount() {

@@ -55,7 +55,7 @@ public class PmsFeightTemplate implements Serializable {
     }
 
     public void setName(String name) {
-        this.name = name;
+        this.name = name == null ? null : name.trim();
     }
 
     public Integer getChargeType() {
@@ -103,7 +103,7 @@ public class PmsFeightTemplate implements Serializable {
     }
 
     public void setDest(String dest) {
-        this.dest = dest;
+        this.dest = dest == null ? null : dest.trim();
     }
 
     @Override

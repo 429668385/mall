@@ -81,7 +81,7 @@ public class UmsMemberReceiveAddress implements Serializable {
     }
 
     public void setName(String name) {
-        this.name = name;
+        this.name = name == null ? null : name.trim();
     }
 
     public String getPhoneNumber() {
@@ -89,7 +89,7 @@ public class UmsMemberReceiveAddress implements Serializable {
     }
 
     public void setPhoneNumber(String phoneNumber) {
-        this.phoneNumber = phoneNumber;
+        this.phoneNumber = phoneNumber == null ? null : phoneNumber.trim();
     }
 
     public Integer getDefaultStatus() {
@@ -105,7 +105,7 @@ public class UmsMemberReceiveAddress implements Serializable {
     }
 
     public void setPostCode(String postCode) {
-        this.postCode = postCode;
+        this.postCode = postCode == null ? null : postCode.trim();
     }
 
     public String getProvince() {
@@ -113,7 +113,7 @@ public class UmsMemberReceiveAddress implements Serializable {
     }
 
     public void setProvince(String province) {
-        this.province = province;
+        this.province = province == null ? null : province.trim();
     }
 
     public String getCity() {
@@ -121,7 +121,7 @@ public class UmsMemberReceiveAddress implements Serializable {
     }
 
     public void setCity(String city) {
-        this.city = city;
+        this.city = city == null ? null : city.trim();
     }
 
     public String getRegion() {
@@ -129,7 +129,7 @@ public class UmsMemberReceiveAddress implements Serializable {
     }
 
     public void setRegion(String region) {
-        this.region = region;
+        this.region = region == null ? null : region.trim();
     }
 
     public String getDetailAddress() {
@@ -137,7 +137,7 @@ public class UmsMemberReceiveAddress implements Serializable {
     }
 
     public void setDetailAddress(String detailAddress) {
-        this.detailAddress = detailAddress;
+        this.detailAddress = detailAddress == null ? null : detailAddress.trim();
     }
 
     @Override

@@ -76,7 +76,7 @@ public class CmsTopic implements Serializable {
     }
 
     public void setName(String name) {
-        this.name = name;
+        this.name = name == null ? null : name.trim();
     }
 
     public Date getCreateTime() {
@@ -132,7 +132,7 @@ public class CmsTopic implements Serializable {
     }
 
     public void setAwardName(String awardName) {
-        this.awardName = awardName;
+        this.awardName = awardName == null ? null : awardName.trim();
     }
 
     public String getAttendType() {
@@ -140,7 +140,7 @@ public class CmsTopic implements Serializable {
     }
 
     public void setAttendType(String attendType) {
-        this.attendType = attendType;
+        this.attendType = attendType == null ? null : attendType.trim();
     }
 
     public String getContent() {
@@ -148,7 +148,7 @@ public class CmsTopic implements Serializable {
     }
 
     public void setContent(String content) {
-        this.content = content;
+        this.content = content == null ? null : content.trim();
     }
 
     @Override

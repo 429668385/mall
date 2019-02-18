@@ -26,12 +26,19 @@
                         password="${jdbc.password}">
         </jdbcConnection>
 
-        <javaModelGenerator targetPackage="com.macro.mall.model" targetProject="mall-mbg\src\main\java"/>
+        <javaModelGenerator targetPackage="com.macro.mall.model" targetProject="/Users/stevenren/eclipse-workspace/mall/mall-mbg/src/main/java">
+        	<property name="enableSubPackages" value="true" />
+        	<property name="trimStrings" value="true"/>
+        </javaModelGenerator>
 
-        <sqlMapGenerator targetPackage="com.macro.mall.mapper" targetProject="mall-mbg\src\main\resources"/>
+        <sqlMapGenerator targetPackage="com.macro.mall.mapper" targetProject="/Users/stevenren/eclipse-workspace/mall/mall-mbg/src/main/resources">
+        	<property name="enableSubPackages" value="true" />
+        </sqlMapGenerator>
 
         <javaClientGenerator type="XMLMAPPER" targetPackage="com.macro.mall.mapper"
-                             targetProject="mall-mbg\src\main\java"/>
+                             targetProject="/Users/stevenren/eclipse-workspace/mall/mall-mbg/src/main/java">
+            <property name="enableSubPackages" value="true" />
+        </javaClientGenerator>
         <!--生成全部表tableName设为%-->
         <table tableName="%">
             <generatedKey column="id" sqlStatement="MySql" identity="true"/>

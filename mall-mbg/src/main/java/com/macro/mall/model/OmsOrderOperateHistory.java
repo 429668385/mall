@@ -64,7 +64,7 @@ public class OmsOrderOperateHistory implements Serializable {
     }
 
     public void setOperateMan(String operateMan) {
-        this.operateMan = operateMan;
+        this.operateMan = operateMan == null ? null : operateMan.trim();
     }
 
     public Date getCreateTime() {
@@ -88,7 +88,7 @@ public class OmsOrderOperateHistory implements Serializable {
     }
 
     public void setNote(String note) {
-        this.note = note;
+        this.note = note == null ? null : note.trim();
     }
 
     @Override

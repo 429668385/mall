@@ -17,11 +17,15 @@ public class PmsSkuStock implements Serializable {
 
     /**
      * 商品进价
+     *
+     * @mbggenerated
      */
-    private BigDecimal priceIn;
-    
+    private Long priceIn;
+
     /**
      * 商品销售价格
+     *
+     * @mbggenerated
      */
     private BigDecimal price;
 
@@ -101,18 +105,18 @@ public class PmsSkuStock implements Serializable {
     }
 
     public void setSkuCode(String skuCode) {
-        this.skuCode = skuCode;
+        this.skuCode = skuCode == null ? null : skuCode.trim();
     }
 
-    public BigDecimal getPriceIn() {
-		return priceIn;
-	}
+    public Long getPriceIn() {
+        return priceIn;
+    }
 
-	public void setPriceIn(BigDecimal priceIn) {
-		this.priceIn = priceIn;
-	}
+    public void setPriceIn(Long priceIn) {
+        this.priceIn = priceIn;
+    }
 
-	public BigDecimal getPrice() {
+    public BigDecimal getPrice() {
         return price;
     }
 
@@ -141,7 +145,7 @@ public class PmsSkuStock implements Serializable {
     }
 
     public void setSp1(String sp1) {
-        this.sp1 = sp1;
+        this.sp1 = sp1 == null ? null : sp1.trim();
     }
 
     public String getSp2() {
@@ -149,7 +153,7 @@ public class PmsSkuStock implements Serializable {
     }
 
     public void setSp2(String sp2) {
-        this.sp2 = sp2;
+        this.sp2 = sp2 == null ? null : sp2.trim();
     }
 
     public String getSp3() {
@@ -157,7 +161,7 @@ public class PmsSkuStock implements Serializable {
     }
 
     public void setSp3(String sp3) {
-        this.sp3 = sp3;
+        this.sp3 = sp3 == null ? null : sp3.trim();
     }
 
     public String getPic() {
@@ -165,7 +169,7 @@ public class PmsSkuStock implements Serializable {
     }
 
     public void setPic(String pic) {
-        this.pic = pic;
+        this.pic = pic == null ? null : pic.trim();
     }
 
     public Integer getSale() {
@@ -201,6 +205,7 @@ public class PmsSkuStock implements Serializable {
         sb.append(", id=").append(id);
         sb.append(", productId=").append(productId);
         sb.append(", skuCode=").append(skuCode);
+        sb.append(", priceIn=").append(priceIn);
         sb.append(", price=").append(price);
         sb.append(", stock=").append(stock);
         sb.append(", lowStock=").append(lowStock);

@@ -63,7 +63,7 @@ public class CmsMemberReport implements Serializable {
     }
 
     public void setReportMemberName(String reportMemberName) {
-        this.reportMemberName = reportMemberName;
+        this.reportMemberName = reportMemberName == null ? null : reportMemberName.trim();
     }
 
     public Date getCreateTime() {
@@ -79,7 +79,7 @@ public class CmsMemberReport implements Serializable {
     }
 
     public void setReportObject(String reportObject) {
-        this.reportObject = reportObject;
+        this.reportObject = reportObject == null ? null : reportObject.trim();
     }
 
     public Integer getReportStatus() {
@@ -103,7 +103,7 @@ public class CmsMemberReport implements Serializable {
     }
 
     public void setNote(String note) {
-        this.note = note;
+        this.note = note == null ? null : note.trim();
     }
 
     @Override

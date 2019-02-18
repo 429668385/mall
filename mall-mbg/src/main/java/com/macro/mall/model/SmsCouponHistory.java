@@ -87,7 +87,7 @@ public class SmsCouponHistory implements Serializable {
     }
 
     public void setCouponCode(String couponCode) {
-        this.couponCode = couponCode;
+        this.couponCode = couponCode == null ? null : couponCode.trim();
     }
 
     public String getMemberNickname() {
@@ -95,7 +95,7 @@ public class SmsCouponHistory implements Serializable {
     }
 
     public void setMemberNickname(String memberNickname) {
-        this.memberNickname = memberNickname;
+        this.memberNickname = memberNickname == null ? null : memberNickname.trim();
     }
 
     public Integer getGetType() {
@@ -143,7 +143,7 @@ public class SmsCouponHistory implements Serializable {
     }
 
     public void setOrderSn(String orderSn) {
-        this.orderSn = orderSn;
+        this.orderSn = orderSn == null ? null : orderSn.trim();
     }
 
     @Override

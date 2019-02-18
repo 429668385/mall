@@ -334,7 +334,7 @@ public class OmsOrder implements Serializable {
     }
 
     public void setOrderSn(String orderSn) {
-        this.orderSn = orderSn;
+        this.orderSn = orderSn == null ? null : orderSn.trim();
     }
 
     public Date getCreateTime() {
@@ -350,7 +350,7 @@ public class OmsOrder implements Serializable {
     }
 
     public void setMemberUsername(String memberUsername) {
-        this.memberUsername = memberUsername;
+        this.memberUsername = memberUsername == null ? null : memberUsername.trim();
     }
 
     public BigDecimal getTotalAmount() {
@@ -446,7 +446,7 @@ public class OmsOrder implements Serializable {
     }
 
     public void setDeliveryCompany(String deliveryCompany) {
-        this.deliveryCompany = deliveryCompany;
+        this.deliveryCompany = deliveryCompany == null ? null : deliveryCompany.trim();
     }
 
     public String getDeliverySn() {
@@ -454,7 +454,7 @@ public class OmsOrder implements Serializable {
     }
 
     public void setDeliverySn(String deliverySn) {
-        this.deliverySn = deliverySn;
+        this.deliverySn = deliverySn == null ? null : deliverySn.trim();
     }
 
     public Integer getAutoConfirmDay() {
@@ -486,7 +486,7 @@ public class OmsOrder implements Serializable {
     }
 
     public void setPromotionInfo(String promotionInfo) {
-        this.promotionInfo = promotionInfo;
+        this.promotionInfo = promotionInfo == null ? null : promotionInfo.trim();
     }
 
     public Integer getBillType() {
@@ -502,7 +502,7 @@ public class OmsOrder implements Serializable {
     }
 
     public void setBillHeader(String billHeader) {
-        this.billHeader = billHeader;
+        this.billHeader = billHeader == null ? null : billHeader.trim();
     }
 
     public String getBillContent() {
@@ -510,7 +510,7 @@ public class OmsOrder implements Serializable {
     }
 
     public void setBillContent(String billContent) {
-        this.billContent = billContent;
+        this.billContent = billContent == null ? null : billContent.trim();
     }
 
     public String getBillReceiverPhone() {
@@ -518,7 +518,7 @@ public class OmsOrder implements Serializable {
     }
 
     public void setBillReceiverPhone(String billReceiverPhone) {
-        this.billReceiverPhone = billReceiverPhone;
+        this.billReceiverPhone = billReceiverPhone == null ? null : billReceiverPhone.trim();
     }
 
     public String getBillReceiverEmail() {
@@ -526,7 +526,7 @@ public class OmsOrder implements Serializable {
     }
 
     public void setBillReceiverEmail(String billReceiverEmail) {
-        this.billReceiverEmail = billReceiverEmail;
+        this.billReceiverEmail = billReceiverEmail == null ? null : billReceiverEmail.trim();
     }
 
     public String getReceiverName() {
@@ -534,7 +534,7 @@ public class OmsOrder implements Serializable {
     }
 
     public void setReceiverName(String receiverName) {
-        this.receiverName = receiverName;
+        this.receiverName = receiverName == null ? null : receiverName.trim();
     }
 
     public String getReceiverPhone() {
@@ -542,7 +542,7 @@ public class OmsOrder implements Serializable {
     }
 
     public void setReceiverPhone(String receiverPhone) {
-        this.receiverPhone = receiverPhone;
+        this.receiverPhone = receiverPhone == null ? null : receiverPhone.trim();
     }
 
     public String getReceiverPostCode() {
@@ -550,7 +550,7 @@ public class OmsOrder implements Serializable {
     }
 
     public void setReceiverPostCode(String receiverPostCode) {
-        this.receiverPostCode = receiverPostCode;
+        this.receiverPostCode = receiverPostCode == null ? null : receiverPostCode.trim();
     }
 
     public String getReceiverProvince() {
@@ -558,7 +558,7 @@ public class OmsOrder implements Serializable {
     }
 
     public void setReceiverProvince(String receiverProvince) {
-        this.receiverProvince = receiverProvince;
+        this.receiverProvince = receiverProvince == null ? null : receiverProvince.trim();
     }
 
     public String getReceiverCity() {
@@ -566,7 +566,7 @@ public class OmsOrder implements Serializable {
     }
 
     public void setReceiverCity(String receiverCity) {
-        this.receiverCity = receiverCity;
+        this.receiverCity = receiverCity == null ? null : receiverCity.trim();
     }
 
     public String getReceiverRegion() {
@@ -574,7 +574,7 @@ public class OmsOrder implements Serializable {
     }
 
     public void setReceiverRegion(String receiverRegion) {
-        this.receiverRegion = receiverRegion;
+        this.receiverRegion = receiverRegion == null ? null : receiverRegion.trim();
     }
 
     public String getReceiverDetailAddress() {
@@ -582,7 +582,7 @@ public class OmsOrder implements Serializable {
     }
 
     public void setReceiverDetailAddress(String receiverDetailAddress) {
-        this.receiverDetailAddress = receiverDetailAddress;
+        this.receiverDetailAddress = receiverDetailAddress == null ? null : receiverDetailAddress.trim();
     }
 
     public String getNote() {
@@ -590,7 +590,7 @@ public class OmsOrder implements Serializable {
     }
 
     public void setNote(String note) {
-        this.note = note;
+        this.note = note == null ? null : note.trim();
     }
 
     public Integer getConfirmStatus() {

@@ -58,7 +58,7 @@ public class PmsMemberPrice implements Serializable {
     }
 
     public void setMemberLevelName(String memberLevelName) {
-        this.memberLevelName = memberLevelName;
+        this.memberLevelName = memberLevelName == null ? null : memberLevelName.trim();
     }
 
     @Override

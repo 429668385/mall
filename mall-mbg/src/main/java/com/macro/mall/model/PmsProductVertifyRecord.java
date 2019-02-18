@@ -57,7 +57,7 @@ public class PmsProductVertifyRecord implements Serializable {
     }
 
     public void setVertifyMan(String vertifyMan) {
-        this.vertifyMan = vertifyMan;
+        this.vertifyMan = vertifyMan == null ? null : vertifyMan.trim();
     }
 
     public Integer getStatus() {
@@ -73,7 +73,7 @@ public class PmsProductVertifyRecord implements Serializable {
     }
 
     public void setDetail(String detail) {
-        this.detail = detail;
+        this.detail = detail == null ? null : detail.trim();
     }
 
     @Override

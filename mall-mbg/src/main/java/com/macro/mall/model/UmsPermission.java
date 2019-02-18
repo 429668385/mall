@@ -92,7 +92,7 @@ public class UmsPermission implements Serializable {
     }
 
     public void setName(String name) {
-        this.name = name;
+        this.name = name == null ? null : name.trim();
     }
 
     public String getValue() {
@@ -100,7 +100,7 @@ public class UmsPermission implements Serializable {
     }
 
     public void setValue(String value) {
-        this.value = value;
+        this.value = value == null ? null : value.trim();
     }
 
     public String getIcon() {
@@ -108,7 +108,7 @@ public class UmsPermission implements Serializable {
     }
 
     public void setIcon(String icon) {
-        this.icon = icon;
+        this.icon = icon == null ? null : icon.trim();
     }
 
     public Integer getType() {
@@ -124,7 +124,7 @@ public class UmsPermission implements Serializable {
     }
 
     public void setUri(String uri) {
-        this.uri = uri;
+        this.uri = uri == null ? null : uri.trim();
     }
 
     public Integer getStatus() {

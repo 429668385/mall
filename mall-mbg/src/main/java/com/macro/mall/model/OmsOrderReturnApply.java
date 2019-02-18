@@ -228,7 +228,7 @@ public class OmsOrderReturnApply implements Serializable {
     }
 
     public void setOrderSn(String orderSn) {
-        this.orderSn = orderSn;
+        this.orderSn = orderSn == null ? null : orderSn.trim();
     }
 
     public Date getCreateTime() {
@@ -244,7 +244,7 @@ public class OmsOrderReturnApply implements Serializable {
     }
 
     public void setMemberUsername(String memberUsername) {
-        this.memberUsername = memberUsername;
+        this.memberUsername = memberUsername == null ? null : memberUsername.trim();
     }
 
     public BigDecimal getReturnAmount() {
@@ -260,7 +260,7 @@ public class OmsOrderReturnApply implements Serializable {
     }
 
     public void setReturnName(String returnName) {
-        this.returnName = returnName;
+        this.returnName = returnName == null ? null : returnName.trim();
     }
 
     public String getReturnPhone() {
@@ -268,7 +268,7 @@ public class OmsOrderReturnApply implements Serializable {
     }
 
     public void setReturnPhone(String returnPhone) {
-        this.returnPhone = returnPhone;
+        this.returnPhone = returnPhone == null ? null : returnPhone.trim();
     }
 
     public Integer getStatus() {
@@ -292,7 +292,7 @@ public class OmsOrderReturnApply implements Serializable {
     }
 
     public void setProductPic(String productPic) {
-        this.productPic = productPic;
+        this.productPic = productPic == null ? null : productPic.trim();
     }
 
     public String getProductName() {
@@ -300,7 +300,7 @@ public class OmsOrderReturnApply implements Serializable {
     }
 
     public void setProductName(String productName) {
-        this.productName = productName;
+        this.productName = productName == null ? null : productName.trim();
     }
 
     public String getProductBrand() {
@@ -308,7 +308,7 @@ public class OmsOrderReturnApply implements Serializable {
     }
 
     public void setProductBrand(String productBrand) {
-        this.productBrand = productBrand;
+        this.productBrand = productBrand == null ? null : productBrand.trim();
     }
 
     public String getProductAttr() {
@@ -316,7 +316,7 @@ public class OmsOrderReturnApply implements Serializable {
     }
 
     public void setProductAttr(String productAttr) {
-        this.productAttr = productAttr;
+        this.productAttr = productAttr == null ? null : productAttr.trim();
     }
 
     public Integer getProductCount() {
@@ -348,7 +348,7 @@ public class OmsOrderReturnApply implements Serializable {
     }
 
     public void setReason(String reason) {
-        this.reason = reason;
+        this.reason = reason == null ? null : reason.trim();
     }
 
     public String getDescription() {
@@ -356,7 +356,7 @@ public class OmsOrderReturnApply implements Serializable {
     }
 
     public void setDescription(String description) {
-        this.description = description;
+        this.description = description == null ? null : description.trim();
     }
 
     public String getProofPics() {
@@ -364,7 +364,7 @@ public class OmsOrderReturnApply implements Serializable {
     }
 
     public void setProofPics(String proofPics) {
-        this.proofPics = proofPics;
+        this.proofPics = proofPics == null ? null : proofPics.trim();
     }
 
     public String getHandleNote() {
@@ -372,7 +372,7 @@ public class OmsOrderReturnApply implements Serializable {
     }
 
     public void setHandleNote(String handleNote) {
-        this.handleNote = handleNote;
+        this.handleNote = handleNote == null ? null : handleNote.trim();
     }
 
     public String getHandleMan() {
@@ -380,7 +380,7 @@ public class OmsOrderReturnApply implements Serializable {
     }
 
     public void setHandleMan(String handleMan) {
-        this.handleMan = handleMan;
+        this.handleMan = handleMan == null ? null : handleMan.trim();
     }
 
     public String getReceiveMan() {
@@ -388,7 +388,7 @@ public class OmsOrderReturnApply implements Serializable {
     }
 
     public void setReceiveMan(String receiveMan) {
-        this.receiveMan = receiveMan;
+        this.receiveMan = receiveMan == null ? null : receiveMan.trim();
     }
 
     public Date getReceiveTime() {
@@ -404,7 +404,7 @@ public class OmsOrderReturnApply implements Serializable {
     }
 
     public void setReceiveNote(String receiveNote) {
-        this.receiveNote = receiveNote;
+        this.receiveNote = receiveNote == null ? null : receiveNote.trim();
     }
 
     @Override

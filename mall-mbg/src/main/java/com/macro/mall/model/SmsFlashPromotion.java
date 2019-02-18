@@ -51,7 +51,7 @@ public class SmsFlashPromotion implements Serializable {
     }
 
     public void setTitle(String title) {
-        this.title = title;
+        this.title = title == null ? null : title.trim();
     }
 
     public Date getStartDate() {

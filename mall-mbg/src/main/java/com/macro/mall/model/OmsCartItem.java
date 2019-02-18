@@ -177,7 +177,7 @@ public class OmsCartItem implements Serializable {
     }
 
     public void setSp1(String sp1) {
-        this.sp1 = sp1;
+        this.sp1 = sp1 == null ? null : sp1.trim();
     }
 
     public String getSp2() {
@@ -185,7 +185,7 @@ public class OmsCartItem implements Serializable {
     }
 
     public void setSp2(String sp2) {
-        this.sp2 = sp2;
+        this.sp2 = sp2 == null ? null : sp2.trim();
     }
 
     public String getSp3() {
@@ -193,7 +193,7 @@ public class OmsCartItem implements Serializable {
     }
 
     public void setSp3(String sp3) {
-        this.sp3 = sp3;
+        this.sp3 = sp3 == null ? null : sp3.trim();
     }
 
     public String getProductPic() {
@@ -201,7 +201,7 @@ public class OmsCartItem implements Serializable {
     }
 
     public void setProductPic(String productPic) {
-        this.productPic = productPic;
+        this.productPic = productPic == null ? null : productPic.trim();
     }
 
     public String getProductName() {
@@ -209,7 +209,7 @@ public class OmsCartItem implements Serializable {
     }
 
     public void setProductName(String productName) {
-        this.productName = productName;
+        this.productName = productName == null ? null : productName.trim();
     }
 
     public String getProductSubTitle() {
@@ -217,7 +217,7 @@ public class OmsCartItem implements Serializable {
     }
 
     public void setProductSubTitle(String productSubTitle) {
-        this.productSubTitle = productSubTitle;
+        this.productSubTitle = productSubTitle == null ? null : productSubTitle.trim();
     }
 
     public String getProductSkuCode() {
@@ -225,7 +225,7 @@ public class OmsCartItem implements Serializable {
     }
 
     public void setProductSkuCode(String productSkuCode) {
-        this.productSkuCode = productSkuCode;
+        this.productSkuCode = productSkuCode == null ? null : productSkuCode.trim();
     }
 
     public String getMemberNickname() {
@@ -233,7 +233,7 @@ public class OmsCartItem implements Serializable {
     }
 
     public void setMemberNickname(String memberNickname) {
-        this.memberNickname = memberNickname;
+        this.memberNickname = memberNickname == null ? null : memberNickname.trim();
     }
 
     public Date getCreateDate() {
@@ -273,7 +273,7 @@ public class OmsCartItem implements Serializable {
     }
 
     public void setProductBrand(String productBrand) {
-        this.productBrand = productBrand;
+        this.productBrand = productBrand == null ? null : productBrand.trim();
     }
 
     public String getProductSn() {
@@ -281,7 +281,7 @@ public class OmsCartItem implements Serializable {
     }
 
     public void setProductSn(String productSn) {
-        this.productSn = productSn;
+        this.productSn = productSn == null ? null : productSn.trim();
     }
 
     public String getProductAttr() {
@@ -289,7 +289,7 @@ public class OmsCartItem implements Serializable {
     }
 
     public void setProductAttr(String productAttr) {
-        this.productAttr = productAttr;
+        this.productAttr = productAttr == null ? null : productAttr.trim();
     }
 
     @Override

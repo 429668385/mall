@@ -95,7 +95,7 @@ public class PmsProductAttribute implements Serializable {
     }
 
     public void setName(String name) {
-        this.name = name;
+        this.name = name == null ? null : name.trim();
     }
 
     public Integer getSelectType() {
@@ -119,7 +119,7 @@ public class PmsProductAttribute implements Serializable {
     }
 
     public void setInputList(String inputList) {
-        this.inputList = inputList;
+        this.inputList = inputList == null ? null : inputList.trim();
     }
 
     public Integer getSort() {

@@ -54,7 +54,7 @@ public class SmsCouponProductCategoryRelation implements Serializable {
     }
 
     public void setProductCategoryName(String productCategoryName) {
-        this.productCategoryName = productCategoryName;
+        this.productCategoryName = productCategoryName == null ? null : productCategoryName.trim();
     }
 
     public String getParentCategoryName() {
@@ -62,7 +62,7 @@ public class SmsCouponProductCategoryRelation implements Serializable {
     }
 
     public void setParentCategoryName(String parentCategoryName) {
-        this.parentCategoryName = parentCategoryName;
+        this.parentCategoryName = parentCategoryName == null ? null : parentCategoryName.trim();
     }
 
     @Override

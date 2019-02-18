@@ -36,7 +36,7 @@ public class SmsHomeBrand implements Serializable {
     }
 
     public void setBrandName(String brandName) {
-        this.brandName = brandName;
+        this.brandName = brandName == null ? null : brandName.trim();
     }
 
     public Integer getRecommendStatus() {

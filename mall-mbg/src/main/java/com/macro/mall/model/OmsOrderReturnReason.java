@@ -44,7 +44,7 @@ public class OmsOrderReturnReason implements Serializable {
     }
 
     public void setName(String name) {
-        this.name = name;
+        this.name = name == null ? null : name.trim();
     }
 
     public Integer getSort() {

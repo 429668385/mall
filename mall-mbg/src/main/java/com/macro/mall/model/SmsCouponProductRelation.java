@@ -54,7 +54,7 @@ public class SmsCouponProductRelation implements Serializable {
     }
 
     public void setProductName(String productName) {
-        this.productName = productName;
+        this.productName = productName == null ? null : productName.trim();
     }
 
     public String getProductSn() {
@@ -62,7 +62,7 @@ public class SmsCouponProductRelation implements Serializable {
     }
 
     public void setProductSn(String productSn) {
-        this.productSn = productSn;
+        this.productSn = productSn == null ? null : productSn.trim();
     }
 
     @Override

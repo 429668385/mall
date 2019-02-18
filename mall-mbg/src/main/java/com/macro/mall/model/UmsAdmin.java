@@ -74,7 +74,7 @@ public class UmsAdmin implements Serializable {
     }
 
     public void setUsername(String username) {
-        this.username = username;
+        this.username = username == null ? null : username.trim();
     }
 
     public String getPassword() {
@@ -82,7 +82,7 @@ public class UmsAdmin implements Serializable {
     }
 
     public void setPassword(String password) {
-        this.password = password;
+        this.password = password == null ? null : password.trim();
     }
 
     public String getIcon() {
@@ -90,7 +90,7 @@ public class UmsAdmin implements Serializable {
     }
 
     public void setIcon(String icon) {
-        this.icon = icon;
+        this.icon = icon == null ? null : icon.trim();
     }
 
     public String getEmail() {
@@ -98,7 +98,7 @@ public class UmsAdmin implements Serializable {
     }
 
     public void setEmail(String email) {
-        this.email = email;
+        this.email = email == null ? null : email.trim();
     }
 
     public String getNickName() {
@@ -106,7 +106,7 @@ public class UmsAdmin implements Serializable {
     }
 
     public void setNickName(String nickName) {
-        this.nickName = nickName;
+        this.nickName = nickName == null ? null : nickName.trim();
     }
 
     public String getNote() {
@@ -114,7 +114,7 @@ public class UmsAdmin implements Serializable {
     }
 
     public void setNote(String note) {
-        this.note = note;
+        this.note = note == null ? null : note.trim();
     }
 
     public Date getCreateTime() {

@@ -46,7 +46,7 @@ public class PmsCommentReplay implements Serializable {
     }
 
     public void setMemberNickName(String memberNickName) {
-        this.memberNickName = memberNickName;
+        this.memberNickName = memberNickName == null ? null : memberNickName.trim();
     }
 
     public String getMemberIcon() {
@@ -54,7 +54,7 @@ public class PmsCommentReplay implements Serializable {
     }
 
     public void setMemberIcon(String memberIcon) {
-        this.memberIcon = memberIcon;
+        this.memberIcon = memberIcon == null ? null : memberIcon.trim();
     }
 
     public String getContent() {
@@ -62,7 +62,7 @@ public class PmsCommentReplay implements Serializable {
     }
 
     public void setContent(String content) {
-        this.content = content;
+        this.content = content == null ? null : content.trim();
     }
 
     public Date getCreateTime() {

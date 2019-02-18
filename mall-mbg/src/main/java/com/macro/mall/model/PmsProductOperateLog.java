@@ -126,7 +126,7 @@ public class PmsProductOperateLog implements Serializable {
     }
 
     public void setOperateMan(String operateMan) {
-        this.operateMan = operateMan;
+        this.operateMan = operateMan == null ? null : operateMan.trim();
     }
 
     public Date getCreateTime() {

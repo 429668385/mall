@@ -92,7 +92,7 @@ public class UmsGrowthChangeHistory implements Serializable {
     }
 
     public void setOperateMan(String operateMan) {
-        this.operateMan = operateMan;
+        this.operateMan = operateMan == null ? null : operateMan.trim();
     }
 
     public String getOperateNote() {
@@ -100,7 +100,7 @@ public class UmsGrowthChangeHistory implements Serializable {
     }
 
     public void setOperateNote(String operateNote) {
-        this.operateNote = operateNote;
+        this.operateNote = operateNote == null ? null : operateNote.trim();
     }
 
     public Integer getSourceType() {

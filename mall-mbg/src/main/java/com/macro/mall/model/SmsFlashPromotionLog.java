@@ -54,7 +54,7 @@ public class SmsFlashPromotionLog implements Serializable {
     }
 
     public void setMemberPhone(String memberPhone) {
-        this.memberPhone = memberPhone;
+        this.memberPhone = memberPhone == null ? null : memberPhone.trim();
     }
 
     public String getProductName() {
@@ -62,7 +62,7 @@ public class SmsFlashPromotionLog implements Serializable {
     }
 
     public void setProductName(String productName) {
-        this.productName = productName;
+        this.productName = productName == null ? null : productName.trim();
     }
 
     public Date getSubscribeTime() {

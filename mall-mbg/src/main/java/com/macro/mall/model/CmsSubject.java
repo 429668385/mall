@@ -89,7 +89,7 @@ public class CmsSubject implements Serializable {
     }
 
     public void setTitle(String title) {
-        this.title = title;
+        this.title = title == null ? null : title.trim();
     }
 
     public String getPic() {
@@ -97,7 +97,7 @@ public class CmsSubject implements Serializable {
     }
 
     public void setPic(String pic) {
-        this.pic = pic;
+        this.pic = pic == null ? null : pic.trim();
     }
 
     public Integer getProductCount() {
@@ -153,7 +153,7 @@ public class CmsSubject implements Serializable {
     }
 
     public void setAlbumPics(String albumPics) {
-        this.albumPics = albumPics;
+        this.albumPics = albumPics == null ? null : albumPics.trim();
     }
 
     public String getDescription() {
@@ -161,7 +161,7 @@ public class CmsSubject implements Serializable {
     }
 
     public void setDescription(String description) {
-        this.description = description;
+        this.description = description == null ? null : description.trim();
     }
 
     public Integer getShowStatus() {
@@ -185,7 +185,7 @@ public class CmsSubject implements Serializable {
     }
 
     public void setCategoryName(String categoryName) {
-        this.categoryName = categoryName;
+        this.categoryName = categoryName == null ? null : categoryName.trim();
     }
 
     public String getContent() {
@@ -193,7 +193,7 @@ public class CmsSubject implements Serializable {
     }
 
     public void setContent(String content) {
-        this.content = content;
+        this.content = content == null ? null : content.trim();
     }
 
     @Override

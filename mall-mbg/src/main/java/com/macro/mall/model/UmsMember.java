@@ -150,7 +150,7 @@ public class UmsMember implements Serializable {
     }
 
     public void setUsername(String username) {
-        this.username = username;
+        this.username = username == null ? null : username.trim();
     }
 
     public String getPassword() {
@@ -158,7 +158,7 @@ public class UmsMember implements Serializable {
     }
 
     public void setPassword(String password) {
-        this.password = password;
+        this.password = password == null ? null : password.trim();
     }
 
     public String getNickname() {
@@ -166,7 +166,7 @@ public class UmsMember implements Serializable {
     }
 
     public void setNickname(String nickname) {
-        this.nickname = nickname;
+        this.nickname = nickname == null ? null : nickname.trim();
     }
 
     public String getPhone() {
@@ -174,7 +174,7 @@ public class UmsMember implements Serializable {
     }
 
     public void setPhone(String phone) {
-        this.phone = phone;
+        this.phone = phone == null ? null : phone.trim();
     }
 
     public Integer getStatus() {
@@ -198,7 +198,7 @@ public class UmsMember implements Serializable {
     }
 
     public void setIcon(String icon) {
-        this.icon = icon;
+        this.icon = icon == null ? null : icon.trim();
     }
 
     public Integer getGender() {
@@ -222,7 +222,7 @@ public class UmsMember implements Serializable {
     }
 
     public void setCity(String city) {
-        this.city = city;
+        this.city = city == null ? null : city.trim();
     }
 
     public String getJob() {
@@ -230,7 +230,7 @@ public class UmsMember implements Serializable {
     }
 
     public void setJob(String job) {
-        this.job = job;
+        this.job = job == null ? null : job.trim();
     }
 
     public String getPersonalizedSignature() {
@@ -238,7 +238,7 @@ public class UmsMember implements Serializable {
     }
 
     public void setPersonalizedSignature(String personalizedSignature) {
-        this.personalizedSignature = personalizedSignature;
+        this.personalizedSignature = personalizedSignature == null ? null : personalizedSignature.trim();
     }
 
     public Integer getSourceType() {

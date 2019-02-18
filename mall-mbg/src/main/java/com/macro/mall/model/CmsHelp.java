@@ -43,7 +43,7 @@ public class CmsHelp implements Serializable {
     }
 
     public void setIcon(String icon) {
-        this.icon = icon;
+        this.icon = icon == null ? null : icon.trim();
     }
 
     public String getTitle() {
@@ -51,7 +51,7 @@ public class CmsHelp implements Serializable {
     }
 
     public void setTitle(String title) {
-        this.title = title;
+        this.title = title == null ? null : title.trim();
     }
 
     public Integer getShowStatus() {
@@ -83,7 +83,7 @@ public class CmsHelp implements Serializable {
     }
 
     public void setContent(String content) {
-        this.content = content;
+        this.content = content == null ? null : content.trim();
     }
 
     @Override
